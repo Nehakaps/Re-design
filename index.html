@@ -27,7 +27,8 @@
         "y": {"field": "b", "type": "quantitative"}
       }
     }
-    "layer":{
+    {
+      "layer":{
      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
      "description": "Google's stock price over time.",
      "data": {"url": "data/stocks.csv"},
@@ -37,7 +38,8 @@
           "x": {"field": "date", "type": "temporal"},
           "y": {"field": "price", "type": "quantitative"}
         }
-    }
+      }
+    }  
     vega.embed("#vis", yourVlSpec);
   </script>
 </body>
